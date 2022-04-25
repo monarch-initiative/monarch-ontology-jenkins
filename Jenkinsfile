@@ -1,5 +1,5 @@
 pipeline {
-    agent any
+    agent { label 'large-worker' }
     // In additional to manual runs, trigger somewhere at midnight to
     // give us the max time in a day to get things right without
     // disrupting people.
